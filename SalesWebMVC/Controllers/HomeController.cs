@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using SalesWebMVC.Models.ViewModels;
 
 namespace SalesWebMVC.Controllers
 {
@@ -25,6 +26,12 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Salles Web MVC App from C# Course";
             return View();
         }
 
